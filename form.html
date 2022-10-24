@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularis</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="horari.html">Horario</a></li>
+                <li><a href="form.html">Registre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Formulari de registre</h1>
+
+    <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat architecto, ipsam corporis eligendi fugit
+        maiores ex! Soluta velit possimus quos delectus adipisci eligendi, laborum quis magni, quisquam nisi dignissimos
+        cum.</article>
+
+    <form action="./formulari.html" method="get">
+        <table border="1px">
+            <tr>
+                <td>
+                    <label for="email">Correo Electrónico: </label>
+                    <input type="email" name="email" id="email" placeholder="Escribe tu correo." required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pwd">Contraseña:</label>
+                    <input type="password" name="pwd" id="pwd" placeholder="Escribe tu contraseña." required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fechaNacimiento">Data de naixement:</label>
+                    <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="textoPrueba">Texto de prueba:</label>
+                    <input type="text" name="textoPrueba" id="textoPrueba">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Eres Meow?</span>
+                    <input type="radio" name="meow" id="meow!!" required value="M!!"><label for="meow!!"> Meow!
+                    </label>
+                    <input type="radio" name="meow" id="meow!!!" required value="M!!!"><label for="meow!!!"> Meow!!
+                    </label>
+                    <input type="radio" name="meow" id="meowGay" required value="MG"><label for="meowGay">Meow¬</label>
+                </td>
+            <tr>
+                <td>
+                    <input type="checkbox" name="terminos" id="terminos" required>
+                    <label for="terminos">Tienes que aceptar <a
+                            href="https://github.com/dmartinez82/LlenguatgesMarques22/blob/main/html/formulari.html"
+                            target="_blank">los terminos</a>, sabemos quien eres.</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar!">
+                    <input type="reset" value="Borrar">
+                </td>
+            </tr>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
