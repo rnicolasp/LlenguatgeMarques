@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Formularis</title>
 </head>
 
@@ -19,42 +20,57 @@
         </nav>
     </header>
 
-    <h1>Formulari de registre</h1>
+    <div class="centro">
+        <h1>Formulari de registre</h1>
 
-    <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat architecto, ipsam corporis eligendi fugit
-        maiores ex! Soluta velit possimus quos delectus adipisci eligendi, laborum quis magni, quisquam nisi dignissimos
-        cum.
+    <article>Hoy, como cada dia, he ido al Eroski en tiempo de patio. Ha sido una visita muy mundana, la única diferencia que ha habido hoy respecto al viernes ha sido el tiquet de la compra.
+        Hoy ha sido el día en el qual he salido de mi zona de confort y he decidido comprar unos Filipinos, tambien llamados donettes. Como toda superfície de comerciación de productos de la edad moderna tiene que haber 
+        unas pequeñas estanterias a la altura de un nino de 10 años donde se exponen toda clase de productos extra azucarados con sabores dignos de la realeza de los años antiguos, en esas estanterias es donde hoy 
+        he perdido la guerra contra los supermercados, me han conseguido vender una caja de smints de color rojo brillante con 50 caramelitos dentro. La estanteria no ponia el precio de los smints por lo tanto no he sido consciente de 
+        a cuanto me saldria la broma hasta que he pagado. 2 euros con 15 céntimos, 2 euros y 15 centimos una diminuta caja con aun mas diminutos caramelos dentro, la estafa del siglo, pero ya era demasiado 
+        tarde para retroceder, el producto estaba dentro de la cesta de la compra asi que no he tenido mas opción que pagar con el dinero de mi orgullosamente ganado sueldo de mi trabajo a tiempo parcial. Cabe recalcar que los caramelos 
+        estaban muy buenos, mas de lo que recordaba.
     </article>
 
-    <form action="./formulari.html" method="get">
+    <form action="./index.html" method="get">
         <table>
             <tr>
                 <td>
                     <label for="email">Correo Electrónico: </label>
-                    <input type="email" name="email" id="email" placeholder="Escribe tu correo." required>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" placeholder="Escribe tu correo.">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="pwd">Contraseña:</label>
-                    <input type="password" name="pwd" id="pwd" placeholder="Escribe tu contraseña." required>
+                </td>
+                <td>
+                    <input type="password" name="pwd" id="pwd" placeholder="Escribe tu contraseña.">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="fechaNacimiento">Data de naixement:</label>
-                    <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+                </td>
+                <td>
+                    <input type="date" name="fechaNacimiento" id="fechaNacimiento">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="textoPrueba">Texto de prueba:</label>
+                </td>
+                <td>
                     <input type="text" name="textoPrueba" id="textoPrueba">
                 </td>
             </tr>
             <tr>
                 <td>
                     <span>Eres Meow?</span>
+                </td>
+                <td>
                     <input type="radio" name="meow" id="meow!!" required value="M!!"><label for="meow!!"> Meow!
                     </label>
                     <input type="radio" name="meow" id="meow!!!" required value="M!!!"><label for="meow!!!"> Meow!!
@@ -64,20 +80,24 @@
             <tr>
                 <td>
                     <input type="checkbox" name="terminos" id="terminos" required>
+                </td>
+                <td>
                     <label for="terminos">Tienes que aceptar <a
-                            href="https://github.com/dmartinez82/LlenguatgesMarques22/blob/main/html/formulari.html"
-                            target="_blank">los terminos</a>, sabemos quien eres.</label>
+                        href="https://github.com/dmartinez82/LlenguatgesMarques22/blob/main/html/formulari.html"
+                        target="_blank">los terminos</a>, sabemos quien eres.</label>
                 </td>
             </tr>
             <tr>
                 <td>
                     <input type="submit" value="Enviar!">
+                </td>
+                <td>
                     <input type="reset" value="Borrar">
                 </td>
             </tr>
-            </tr>
         </table>
     </form>
+    </div>
 </body>
 
 </html>
