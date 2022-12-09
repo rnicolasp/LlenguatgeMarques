@@ -1,0 +1,163 @@
+:root {
+    --color_fons_nav: thistle;
+    --color_icones: darkcyan;
+    --color_icones_hover: aquamarine;
+    --color_data: #3498db;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+body {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    margin-top: 13vh;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.articlesMain {
+    background-color: var(--color_icones_hover);
+    width: 100%;
+}
+
+article {
+    padding: 10px;
+    text-justify: inter-word;
+}
+
+.banner {
+    width: 10%;
+    margin: 0.5vw;
+    background-image: url(/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color_fons_nav);
+    width: 90vw;
+    height: 11vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+li {
+    padding: 5px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    list-style: none;
+}
+
+.fem-garfield {
+    padding: 10px;
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+    
+}
+.fem-garfieldMin {
+    display: none;
+    width:10vw;
+    justify-content: space-between;
+    font-size: 10px;
+}
+
+.loginNav {
+    padding: 10px;
+}
+
+.loginNavMin {
+    display: none;
+    justify-content: space-between;
+}
+
+.wrapper {
+    padding-bottom: 30px;
+}
+
+.divider {
+    position: relative;
+    margin-top: 40px;
+    height: 1px;
+}
+
+.div-transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+}
+
+.lineaIzq {
+    border-left: solid black 2px;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+.dataText {
+    font-size: 32px;
+    color:var(--color_data);
+}
+
+.titolBlog {
+    text-shadow: 1px 1px 1px black;
+}
+
+i {
+    color: var(--color_icones);
+}
+
+i:hover {
+    color: var(--color_icones_hover);
+}
+
+@media only screen and (max-width: 768px) {
+    .loginNavMin {
+        display: flex;
+    }
+
+    .loginNav {
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    nav {
+        height: 20vh;
+    }
+
+    .fem-garfieldMin {
+        display: flex;
+    }
+
+    .fem-garfield {
+        display: none;
+    }
+  }
