@@ -97,7 +97,7 @@ function validaCaptcha() {
     var x = eval(label_captcha.textContent);
     var y = captcha.value;
 
-    return (x == y) ? "" : "No es";
+    return (x == y) ? "" : "No es correcte";
 }
 
 function validaLlargaria(input, min, max) {
